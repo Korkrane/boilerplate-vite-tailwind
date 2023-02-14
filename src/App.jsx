@@ -1,7 +1,13 @@
+import { Route, Routes } from 'react-router-dom';
+
+import { Signin } from '@internals/pages';
+
 function App() {
   return (
     <>
-      <div className='text-red-500'>This is a Vite & tailwind boilerplate</div>
+      <Routes>
+        <Route path="/signin" element={<Signin />} />
+      </Routes>
     </>
   );
 }
